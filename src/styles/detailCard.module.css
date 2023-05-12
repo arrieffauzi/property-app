@@ -1,0 +1,90 @@
+.container {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+
+.section {
+  flex: 0.5;
+  flex-direction: column;
+}
+
+.iconTitle {
+  display: flex;
+}
+
+.titleContainer {
+  margin-left: 16px;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 31px;
+  color: #1a2258;
+}
+
+.address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: right;
+  color: #787d9c;
+}
+
+.typeLabelContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+}
+
+.typeLabel {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1a2258;
+}
+
+.priceContainer {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+
+.price {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 26px;
+  color: #1a2258;
+}
+
+.subPrice {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: right;
+  color: #787d9c;
+}
+
+@media only screen and (max-width: 600px) {
+  .priceContainer {
+    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 12px;
+  }
+
+  .subPrice{
+    margin-left: 10px;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
