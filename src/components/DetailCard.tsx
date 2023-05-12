@@ -38,7 +38,7 @@ function DetailCard(props: any) {
         </div>
         <div className={styles.typeLabelContainer}>
           <span className={styles.typeLabel}>
-            {project_type}.{year}.{ownership_type}
+            {project_type} . {year} . {ownership_type}
           </span>
           <span className={styles.typeLabel}>{availabilities_label}</span>
         </div>
